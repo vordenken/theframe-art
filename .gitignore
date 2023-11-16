@@ -1,2 +1,4 @@
 /images
 uploaded_files.json
+.DS_Store
+test-docker-compose.yml
