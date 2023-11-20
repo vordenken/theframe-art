@@ -4,7 +4,7 @@
 run_script() {
     python3 download_artwork.py
     sleep 30
-    python3 art.py
+    python3 art.py --upload-all
 }
 
 # Endlosschleife, die alle 12 Stunden das Skript ausführt
