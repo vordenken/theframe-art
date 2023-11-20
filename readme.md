@@ -3,6 +3,8 @@
 It runs every 12 hours inside the container and also downloads art from unsplash.
 
 You need to obtain a unsplash api-key to use this.
+-> https://unsplash.com/developers
+
 
 Inside the repo you can find a example docker-compose.yml file.
 
