@@ -21,3 +21,9 @@ jobs:
 
     - name: Build the Docker image
       run: docker build -t ghcr.io/vordenken/$GITHUB_REPOSITORY/theframe-art:latest .
+      
+    - name: Login to GitHub Container Registry
+      run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+
+    - name: Push Docker image to GitHub Container Registry
+      run: docker push ghcr.io/$GITHUB_REPOSITORY/theframe-art:latest
